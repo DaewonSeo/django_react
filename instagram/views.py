@@ -8,6 +8,11 @@ class PostViewSet(ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
+    # def dispatch(self, request, *args, **kwargs):
+    #     print("requst.body:", request.body)
+    #     print("reques.POST:", request.POST)
+    #     return super().dispatch(request, *args, **kwargs)
+
 # def post_list(request):
 #     pass
 
